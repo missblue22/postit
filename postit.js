@@ -33,4 +33,8 @@ submitButton.addEventListener('click', () => {
     postitCard.appendChild(descriptionDiv).appendChild(descriptionP);
 
     postitArea.appendChild(postitCard);
+
+    document.getElementById('postitTitle').value = ""
+    document.getElementById("input-postit-description").value = ""
+
 })
