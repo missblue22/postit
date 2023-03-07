@@ -1,0 +1,85 @@
+.postit-area {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px
+}
+
+.form-title {
+    text-align: center;
+}
+
+.form-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.form-content {
+    background-color: lightgray;
+    border-radius: 10px;
+    width: 45%;
+}
+
+.postit-card {
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 5px 15px;
+    height: 150px;
+    width: 150px;
+    padding: 5px;
+}
+
+.postit-title-card {
+    border-bottom: 0.5px solid black;
+    padding-bottom: 5px;
+}
+
+.postit-title-card p {
+    margin: 5px 0 0 0;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.postit-description-card p {
+    font-size: 0.9rem;
+    padding-left: 5px;
+}
+
+.postitForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.postitInput {
+    margin: 2px 0 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+input[name="postitDescription"] {
+    height: 100px;
+}
+
+.postitButton {
+    display: flex;
+    margin: 10px 0 10px;
+}
+
+#submitButton {
+    margin: auto;
+}
+
+#message-error {
+    color: red;
+}
+
+
+@media screen and (max-width: 390px) {
+    .form-content {
+        width: 85%;
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+<script src="postit.js" defer></script>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>Mes postits</h1>
+    </div>
+    <div class="postit-area" id="postit-area">
+        <div class="postit-card">
+            <div class="postit-title-card">
+                <p>titre de mon postit</p>
+            </div>
+            <div class="postit-description-card">
+                <p>truc à faire</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-area" id="form-area">
+        <div class="form-content">
+            <div class="form-title">
+                <h3>Créer un postit</h3>
+            </div>
+            <div class="postitForm">
+                <div class="postitInput">
+                    <label for="postitTitle">Titre</label>
+                    <input id="postitTitle" type="text" name="postitTitle">
+                </div>
+                <div class="postitInput">
+                    <label for="postitDescription">A faire</label>
+                    <input id="input-postit-description" type="text" name="postitDescription">
+                </div>
+            </div>
+            <div class="postitButton">
+                <button type="submit" id="submitButton">soumettre</button>
+            </div>
+        </div>
+        <p id="message-error"></p>
+    </div>
+</body>
+
+</html>
